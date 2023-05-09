@@ -12,14 +12,16 @@ function myButtonClicked () {
   let text = ""
   let counter = 0
   const firstNumber = parseInt(document.getElementById("first-number").value)
-  const secondNumber = parseInt(document.getElementById("second-number").value)
+  var secondNumber = parseInt(document.getElementById("second-number").value)
+  const secondNumberTwo = parseInt(document.getElementById("second-number").value)
 
   // process
   while (counter < firstNumber) {
-    text = text + secondNumber + " "
+    text = text + secondNumber + "<br> Your answer is: " + (secondNumber) + "<br>"
     counter = counter + 1
+    secondNumber = secondNumber + secondNumberTwo
   }
 
   // output
-  document.getElementById("the-answer").innerHTML = text
+  document.getElementById("answer").innerHTML = text
 }

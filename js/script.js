@@ -6,22 +6,19 @@
 
 "use strict"
 
-function myButtonClicked () {
-  // this function does repeated addition
-  // input
-  let text = ""
-  let counter = 0
-  const firstNumber = parseInt(document.getElementById("first-number").value)
-  var secondNumber = parseInt(document.getElementById("second-number").value)
-  const secondNumberTwo = parseInt(document.getElementById("second-number").value)
+function myButtonClicked() {
+  //input
+  const firstInteger = parseInt(document.getElementById("first-number").value)
+  const secondInteger = parseInt(document.getElementById("second-number").value)
 
   // process
-  while (counter < firstNumber) {
-    text = text + secondNumber + "<br> Your answer is: " + (secondNumber) + "<br>"
+  let counter = 0
+  let answer = 0
+  while (counter < secondInteger) {
+    answer = answer + firstInteger
     counter = counter + 1
-    secondNumber = secondNumber + secondNumberTwo
   }
 
-  // output
-  document.getElementById("answer").innerHTML = text
+  //output
+  document.getElementById('the-answer').innerHTML = firstInteger + " x " + secondInteger + " = " + answer
 }

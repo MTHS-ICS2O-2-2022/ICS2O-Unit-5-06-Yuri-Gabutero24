@@ -5,25 +5,61 @@
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="160" y="40" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="160" y="10" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="160" y="590" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="360" y="620" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;startArrow=none;" parent="1" source="19" target="3" edge="1">
+                <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;startArrow=none;" parent="1" source="21" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="210" y="100" as="sourcePoint"/>
                         <mxPoint x="210" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;" edge="1" parent="1" source="2" target="19">
+                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;" parent="1" source="2" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="210" y="100" as="sourcePoint"/>
                         <mxPoint x="210" y="270" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="User puts in &lt;br&gt;two numbers" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-                    <mxGeometry x="135" y="120" width="150" height="90" as="geometry"/>
+                <mxCell id="19" value="User puts in &lt;br&gt;two numbers" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="80" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;startArrow=none;" edge="1" parent="1" source="28" target="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="210" as="sourcePoint"/>
+                        <mxPoint x="210" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="show&amp;nbsp;&lt;br&gt;firstInteger + &quot; x &quot; + secondInteger + &quot; = &quot; + answer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="135" y="610" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;startArrow=none;" edge="1" parent="1" source="19" target="23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="210" as="sourcePoint"/>
+                        <mxPoint x="210" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="while (counter &amp;lt; secondInteger)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="180" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;startArrow=none;" edge="1" parent="1" source="23" target="25">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="370" as="sourcePoint"/>
+                        <mxPoint x="210" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="answer = answer + firstInteger" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="340" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;endArrow=none;startArrow=none;" edge="1" parent="1" source="25" target="28">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="480" as="sourcePoint"/>
+                        <mxPoint x="210" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="counter = &lt;br&gt;counter + 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="500" width="120" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
